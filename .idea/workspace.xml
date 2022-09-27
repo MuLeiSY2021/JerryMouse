@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0816c50f-3c95-4448-b241-05bb1fbbe2e7" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpExample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ConnectorsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Accept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Cookie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpAttrInnerList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpAttrSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpConstrue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpAttrSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpRequestConstrue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpResponseConstrue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/SampleConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Engine/Host/Context/Warpper/Warpper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/classes/org/example/Hello.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/lib/tomcat-annotations-api-9.0.46.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/lib/tomcat-embed-core-9.0.46.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/images/tomcat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ServerConfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F6VXudg4n8gvF3WiLkdneFawhP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/MuLei_SY/IdeaProjects/JerryMouse/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.Server.Service.Connector" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0816c50f-3c95-4448-b241-05bb1fbbe2e7" name="变更" comment="" />
+      <created>1663812564495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663812564495</updated>
+      <workItem from="1663812565690" duration="1534000" />
+      <workItem from="1663825752926" duration="4795000" />
+      <workItem from="1664086583701" duration="14987000" />
+      <workItem from="1664263103505" duration="2386000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
