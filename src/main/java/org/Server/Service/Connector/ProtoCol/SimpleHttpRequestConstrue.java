@@ -1,30 +1,84 @@
 package org.Server.Service.Connector.ProtoCol;
 
-import java.lang.reflect.Field;
-import java.nio.charset.StandardCharsets;
-import java.util.LinkedList;
-
 public class SimpleHttpRequestConstrue extends HttpConstrue{
 
     //----------------OtherAttr-----------------//
 
-    private LinkedList<Cookie> cookies;
+    protected String cookie;
 
-    private Accept acceptInfo;
+    protected String accept;
 
-    private String connection;
+    protected String accept_encoding;
 
-    private Content content;
+    protected String accept_language;
 
-    private String host;
+    protected String last_modified;
 
-    public String toResqusetPacketStr() throws IllegalAccessException {
-        return super.toPacketStr(this.getClass());
+    protected String referer;
+
+    protected String upgrade_insecure_requests;
+
+    protected String connection;
+
+    protected String host;
+
+    protected String pragma;
+
+    protected String user_agent;
+
+    protected String cache_control;
+
+    public String toRequestPacketStr() throws IllegalAccessException {
+        return super.toPacketStr(this);
     }
 
-    public SimpleHttpRequestConstrue(byte[] bytes) {
-        super.stuff(bytes,this.getClass());
+    public SimpleHttpRequestConstrue(String text) throws Exception {
+        super.stuff(text,this);
     }
 
 
+
+    public String getCookie() {
+        return cookie;
+    }
+
+    public String getAccept() {
+        return accept;
+    }
+
+    public String getAccept_encoding() {
+        return accept_encoding;
+    }
+
+    public String getAccept_language() {
+        return accept_language;
+    }
+
+    public String getLast_modified() {
+        return last_modified;
+    }
+
+    public String getReferer() {
+        return referer;
+    }
+
+    public String getUpgrade_insecure_requests() {
+        return upgrade_insecure_requests;
+    }
+
+    public String getConnection() {
+        return connection;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public String getPragma() {
+        return pragma;
+    }
+
+    public String getUser_agent() {
+        return user_agent;
+    }
 }

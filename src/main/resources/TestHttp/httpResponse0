@@ -1,0 +1,110 @@
+HTTP/1.1 200 OK
+Server: DrcomServer1.0
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-type: text/html; charset=gbk
+Cache-Control: no-cache
+Content-length: 3934
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+<title>校园网认证系统                          </title>
+<script language="JavaScript"><!--
+time='3544      ';flow='16983440  ';fsele=0;fee='1234567890';xsele=0;xip='000.000.000.000.';
+flow0=flow%1024;flow1=flow-flow0;flow0=flow0*1000;flow0=flow0-flow0%1024;fee1=fee-fee%100;
+flow3='.';
+if(flow0/1024<10)flow3='.00';
+else{if(flow0/1024<100)flow3='.0';}
+function DispTFM(sele){
+switch(sele){
+	case 0:
+		document.write("已使用时间 : "+time +" Min");
+		break;
+	case 1:
+	    document.write("已使用流量 : "+flow1/1024+flow3+flow0/1024+" MByte");
+	    break;
+	case 2:
+		if(fsele==1)document.write("余额 : "+"RMB"+fee1/10000);
+			break;
+		case 3:
+			if(xsele==1)document.write("外网映射地址 : "+xip);
+			break;
+		}}
+url3='1.htm';url4='F.htm';
+s2=0;
+function wc(){if(window.confirm("确定注销?")){s2=1;window.location=url4}}
+
+function checkphone(){
+if((navigator.userAgent.indexOf('iPad') > 0) || (navigator.userAgent.indexOf('Windows NT') > 0))return;
+if((navigator.userAgent.indexOf('Mobile') > 0) ){}
+else return;
+s2=1;
+window.location='a31.htm';
+}
+
+// --></script>
+<style><!--
+a {text-decoration: none; color:#2365AF;}
+body {margin:0; padding:0; text-align:center; background-color:#f8f2fc;}
+.font1 {font-size:13px; font-family:Microsoft YaHei; line-height:24px; color:#606060;}
+.font2 {font-size:12px; font-family:Microsoft YaHei; line-height:24px; color:#719CB3;}
+.con {width: 1000px; height:600px; margin-right: auto; margin-left: auto;}
+.bg {background-image: url('a01.jpg'); background-repeat: no-repeat; width: 1000px; height:600px;}
+#submit{
+background-color: #7b1f72;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#7b1f72), to(#7b1f72));
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+border-width: 1px;
+border-style: solid;
+border-color: #7b1f72 #7b1f72 #7b1f72 #7b1f72;
+float: left;
+height: 28px;
+padding: 0;
+width: 109px;
+cursor: pointer;
+font: 14px Microsoft YaHei, Helvetica;
+color: #ffffff;
+}
+#submit:hover,#submit:focus{
+background-color: #7b1f72;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#7b1f72), to(#9c4393));
+}
+#submit:active{
+	outline: none;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+--></style>
+</head>
+<!--Dr.COMWebLoginID_1.htm-->
+<body onload="checkphone()">
+<div class="con">
+	<div class="bg">
+		<div id="left" style="float:left; width:320px; margin-top: 175px; margin-left:140px;">
+			<div id="welcome" style="float:top; height:160px; text-align:left;" class="font1"><h3><br>您已成功登陆！<br><br>若有问题请致电83955278！<br><br><br></h3>                                                                                                                                 </div>
+			<div id="foot" style="float:top; height:20px; margin-top: 64px;" class="font2">
+			</div>
+		</div>
+
+		<div id="login" style="float:left; width:300px; height:170px; margin-top: 220px; margin-left:52px">
+		<form name="f1" method="post" action="">
+			<div id="info" style="height:100px; padding-top:12px;" class="font1">
+				<script language="javascript">DispTFM(0)</script><br>
+				<script language="javascript">DispTFM(1)</script><br>
+				<script language="javascript">DispTFM(2)</script><br>
+				<script language="javascript">DispTFM(3)</script>
+			</div>
+			<div id="btn" style="height:30px; margin-top:22px;">
+				<input id="submit" type="button" value="注　销" onClick="javascript:wc()" style="margin-left:95px;">
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

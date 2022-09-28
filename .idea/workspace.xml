@@ -4,39 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0816c50f-3c95-4448-b241-05bb1fbbe2e7" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httpExample" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ConnectorsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Accept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Cookie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpAttrInnerList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpAttrSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpConstrue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpAttrSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpRequestConstrue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpResponseConstrue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/SampleConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Engine/Host/Context/Warpper/Warpper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/classes/org/example/Hello.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/lib/tomcat-annotations-api-9.0.46.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/lib/tomcat-embed-core-9.0.46.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/images/tomcat.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JerryMouseExample/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ServerConfig.json" afterDir="false" />
+    <list default="true" id="0816c50f-3c95-4448-b241-05bb1fbbe2e7" name="变更" comment="简单写了个Http解析器">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Client/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/AcceptLanguageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/AcceptRangesTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/AccpetType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/BasicSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/Content_Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/EncodingType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/Methods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/ResponseSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/ResuqsetSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/SessionConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/SimpleHttpAttrSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Util/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/TestHttp/httpRequest0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/TestHttp/httpRequest1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/TestHttp/httpResponse0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Accept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Content.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/Cookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/Cookie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpAttrInnerList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/HttpAttrSetList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpAttrSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpDeepConstruct/HttpAttrSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpConstrue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpConstrue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpAttrSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpRequestConstrue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpRequestConstrue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpResponseConstrue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpResponseConstrue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/SampleConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/SampleConnector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +44,7 @@
       <list>
         <option value="package.json" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +70,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/MuLei_SY/IdeaProjects/JerryMouse/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/MuLei_SY/IdeaProjects/preWork/WriteAndCountWord&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,11 +80,46 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/TestHttp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.Server.Service.Connector" />
     </key>
+  </component>
+  <component name="RunManager" selected="应用程序.SampleConnector">
+    <configuration name="SampleConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.Server.Service.Connector.SampleConnector" />
+      <module name="JerryMouse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Server.Service.Connector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client.TestClient" />
+      <module name="JerryMouse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.TestClient" />
+        <item itemvalue="应用程序.SampleConnector" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,7 +133,22 @@
       <workItem from="1663825752926" duration="4795000" />
       <workItem from="1664086583701" duration="14987000" />
       <workItem from="1664263103505" duration="2386000" />
+      <workItem from="1664265502912" duration="419000" />
+      <workItem from="1664265929228" duration="133000" />
+      <workItem from="1664266069232" duration="41000" />
+      <workItem from="1664327192198" duration="4422000" />
+      <workItem from="1664333845950" duration="1384000" />
+      <workItem from="1664335237588" duration="3351000" />
+      <workItem from="1664343371568" duration="8895000" />
     </task>
+    <task id="LOCAL-00001" summary="简单写了个Http解析器">
+      <created>1664265558259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664265558259</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,5 +167,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="简单写了个Http解析器" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单写了个Http解析器" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/HttpConstrue.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpRequestConstrue.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Server/Service/Connector/ProtoCol/SimpleHttpResponseConstrue.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.StringBuilder" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

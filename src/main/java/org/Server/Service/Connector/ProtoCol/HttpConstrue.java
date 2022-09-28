@@ -1,45 +1,53 @@
 package org.Server.Service.Connector.ProtoCol;
 
+import org.Server.Service.Util.Util;
+
 import java.lang.reflect.Field;
-import java.nio.charset.StandardCharsets;
-import java.util.LinkedList;
 
 public abstract class HttpConstrue {
-    public static final String spiltTag = ": ";
+    private static final String spiltTag = ": ";
 
-    public static final String subAttrSpiltTag = "-";
+    public static String getSpiltTag() {
+        return spiltTag;
+    }
 
     //Common Report
-    protected String method;
-    protected String askUrl;
-    protected String httpVersion;
+    private String method;
+    private String askUrl;
+    private String httpVersion;
 
-    public String toPacketStr(Class clazz) throws IllegalAccessException {
+    public String toPacketStr(Object child) throws IllegalAccessException {
         StringBuilder sb = new StringBuilder();
         sb.append(method).append(' ')
                 .append(askUrl).append(' ')
                 .append(httpVersion).append('\n');
-        for (Field f:this.getClass().getDeclaredFields()) {
-            if(f.getName().equals("method") ||
+        for (Field f:child.getClass().getDeclaredFields()) {
+            if(f.getName().equals("innerContent") ||
+                    f.getName().equals("method") ||
                     f.getName().equals("askUrl") ||
                     f.getName().equals("httpVersion") ||
                     f.getName().equals("spiltTag") ||
                     f.getName().equals("subAttrSpiltTag")) {
                 continue;
             }
-            if(f.getType().equals(String.class)) {
-                sb.append(f.getName()).append(spiltTag).append((String) (f.get(clazz)));
-            } else {
-                sb.append(f.get(this).toString());
+            try {
+                Object text = f.get(child);
+                if(text != null) {
+
+                    sb.append(Util.toHttpType(f.getName())).append(spiltTag).append((f.get(child)));
+                    sb.append("\n");
+                }
+            } catch (IllegalAccessException e) {
+                System.err.println(f.getType() + " name:" + f.getName());
+                throw e;
             }
-            sb.append("\n");
+
         }
         return sb.toString();
     }
 
-    public void stuff(byte[] bytes,Class clazz) {
-        String completeText = new String(bytes, StandardCharsets.UTF_8);
-        String[] lines = completeText.split("\n");
+    public void stuff(String text,Object child) throws Exception {
+        String[] lines = text.split("\n");
         String commonHead = lines[0];
         String[] content = commonHead.split(" ");
         if(content.length > 0) {
@@ -51,42 +59,54 @@ public abstract class HttpConstrue {
         if(content.length > 2) {
             this.httpVersion = content[2];
         }
-        try {
-            for (int i = 1; i < lines.length; i++) {
-                String line = lines[i];
-                content = line.split(spiltTag);
-                if (content.length < 2) {
-                    continue;
-                }
-                String[] attr;
-                if (((attr = content[0].split(subAttrSpiltTag)).length) != 0) {
-                    for (Field attrF : this.getClass().getDeclaredFields()) {
-                        if (attrF.getDeclaringClass().getName().equals(attr[0])) {
-                            if (attrF.get(this) == null) {
-                                attrF.set(this, attrF.getDeclaringClass().newInstance());
-                            }
-                            attrF.getClass().getDeclaredMethod("attrReflect", String.class, String.class).invoke(attrF.get(clazz), attr[1], attr[2]);
-                        }
-                    }
-                } else {
-                    Field contentF = this.getClass().getDeclaredField(content[0].toLowerCase());
-                    if (!contentF.getDeclaringClass().equals(String.class)) {
-                        if (contentF.get(clazz) == null) {
-                            contentF.set(clazz, contentF.getDeclaringClass().newInstance());
-                        }
-                        if (contentF.get(clazz) instanceof LinkedList) {
-                            Class attrC = Class.forName(content[0]);
-                            Object obj = attrC.newInstance();
-                            attrC.getDeclaredMethod("init").invoke(obj,content[1]);
-                            ((LinkedList) (contentF.get(clazz))).add(obj);
-                        }
-                    } else {
-                        contentF.set(this,content[1]);
-                    }
-                }
+        for (int i = 1; i < lines.length; i++) {
+            String line = lines[i];
+            if(line.isEmpty() || line.indexOf(0) == '\n') {
+                return ;
             }
-        }catch (Exception e) {
-            e.getStackTrace();
+            content = line.split(spiltTag);
+            if (content.length < 2) {
+                continue;
+            }
+            String[] attr;
+            content[0] = content[0].toLowerCase().replace("-","_");
+//            if (((attr = content[0].split(subAttrSpiltTag)).length) > 1) {
+//                for (Field attrF : this.getClass().getDeclaredFields()) {
+//                    if (attrF.getDeclaringClass().getName().equals(attr[0])) {
+//                        if (attrF.get(child) == null) {
+//                            attrF.set(child, attrF.getDeclaringClass().newInstance());
+//                        }
+//                        attrF.getClass().getDeclaredMethod("attrReflect", String.class, String.class).invoke(attrF.get(child), attr[1], attr[2]);
+//                    }
+//                }
+//            } else {
+            Field contentF = child.getClass().getDeclaredField(content[0]);
+            if (!contentF.getType().equals(String.class)) {
+                if (contentF.get(child) == null) {
+                    contentF.set(child, contentF.getDeclaringClass().getConstructor().newInstance(content[1]));
+                }
+//                    if (contentF.get(child) instanceof LinkedList) {
+//                        Class attrC = Class.forName(content[0]);
+//                        Object obj = attrC.newInstance();
+//                        attrC.getDeclaredMethod("attrReflect", String.class, String.class).invoke(attrC, attr[1], attr[2]);
+//                        ((LinkedList) (contentF.get(child))).add(obj);
+//                    }
+            } else {
+                contentF.set(this,content[1]);
+            }
+//            }
         }
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public String getAskUrl() {
+        return askUrl;
+    }
+
+    public String getHttpVersion() {
+        return httpVersion;
     }
 }
